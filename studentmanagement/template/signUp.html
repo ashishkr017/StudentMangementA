@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {% load static %} 
+        <label>First Name</label>
+        <input type="text" placeholder="Enter first name" name="fname"/>
+    <br><br>
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter first name" name="lname"/>
+
+        <br><br>
+        <label>Role:</label>
+        <label>Teacher</label>
+        <input type="radio" name="role" value="teacher">
+        
+        <label>Student</label>
+        <input type="radio" name="role" value="student">
+
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="enter mail">
+<br><br>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="enter password">
+        <br><br>
+        <button type="submit">Submit</button>
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
